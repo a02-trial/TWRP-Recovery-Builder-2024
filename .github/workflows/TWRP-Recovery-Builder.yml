@@ -16,19 +16,19 @@ on:
       DEVICE_TREE:
         description: 'Custom Recovery Tree' 
         required: true
-        default: 'https://github.com/kinguser981/cap_sprout_twrp'
+        default: 'https://github.com/twrpdtgen/android_device_samsung_a02'
       DEVICE_TREE_BRANCH:
         description: 'Custom Recovery Tree Branch' 
         required: true
-        default: 'android-12.1'
+        default: 'a02xx-user-11-RP1A.200720.012-A022FXXS3BWH1-release-keys'
       DEVICE_PATH:
-        description: 'Specify your Device Path' 
+        description: 'Device path' 
         required: true
-        default: 'device/nokia/cap_sprout'
+        default: 'device/samsung/a02'
       DEVICE_NAME:
         description: 'Specify your Device Codename' 
         required: true
-        default: 'cap_sprout'
+        default: 'a02'
       BUILD_TARGET:
         description: 'Specify your Build Target' 
         required: true
