@@ -40,7 +40,7 @@ on:
         - vendorboot
       LDCHECK:
         description: 'Path of blobs to check' 
-        required: true
+        required: false
         default: 'system/bin/qseecomd'
       RECOVERY_TAR:
         description: 'Release Recovery.tar For Samsung devices'
@@ -50,8 +50,8 @@ on:
       RECOVERY_INSTALLER:
         description: 'Include recovery installer.zip'
         type: boolean
-        required: true
-        default: true
+        required: false
+        default: false
 jobs:
   build:
     name: Build TWRP by ${{ github.actor }}
