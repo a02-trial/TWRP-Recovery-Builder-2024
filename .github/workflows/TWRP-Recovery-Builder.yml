@@ -20,7 +20,7 @@ on:
       DEVICE_TREE_BRANCH:
         description: 'Custom Recovery Tree Branch' 
         required: true
-        default: 'a02xx-user-11-RP1A.200720.012-A022FXXS3BWH1-release-keys'
+        default: 'a02xx-user-11-RP1A.200720.012-A022FXXS3HERİ-release-keys'
       DEVICE_PATH:
         description: 'Device path' 
         required: true
@@ -38,20 +38,6 @@ on:
         - boot
         - recovery
         - vendorboot
-      LDCHECK:
-        description: 'Path of blobs to check' 
-        required: false
-        default: 'system/bin/qseecomd'
-      RECOVERY_TAR:
-        description: 'Release Recovery.tar For Samsung devices'
-        required: false
-        default: false
-        type: boolean
-      RECOVERY_INSTALLER:
-        description: 'Include recovery installer.zip'
-        type: boolean
-        required: false
-        default: false
 jobs:
   build:
     name: Build TWRP by ${{ github.actor }}
