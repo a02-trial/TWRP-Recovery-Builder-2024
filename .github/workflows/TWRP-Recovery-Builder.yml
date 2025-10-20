@@ -6,17 +6,11 @@ on:
       MANIFEST_BRANCH:
         description: 'TWRP Minimal-Manifest Branch'
         required: true
-        default: ''
-        type: choice
-        options:
-        - twrp-14.1
-        - twrp-12.1
-        - twrp-11
-        - twrp-9.0
+        default: 'twrp-11'
       DEVICE_TREE:
         description: 'Custom Recovery Tree' 
         required: true
-        default: 'https://github.com/twrpdtgen/android_device_samsung_a02'
+        default: 'https://github.com/a02-trial/android_device_samsung_a02'
       DEVICE_TREE_BRANCH:
         description: 'Custom Recovery Tree Branch' 
         required: true
